@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-wrapper">
+        <!-- logo -->
+        <div class="logo"></div>
+        <!-- nav menu -->
+        <div class="menu">
+            <a href="#" class="menu-home">Home</a>
+            <a href="#oProfile" class="menu-profile">Our Profile</a>
+            <a href="#" class="menu-achieve">Achievement</a>
+            <a href="#messageUs" class="menu-message">Message Us</a>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <!-- welcome page -->
+        <article>
+            <header>
+                <h1>Hi <span id="name">Guest</span>, Welcome to Our Website</h1>
+            </header>
+            <!-- banner -->
+            <img class="banner-img" src="https://picsum.photos/1890" alt="">
+            <img class="banner-img" src="https://picsum.photos/1889" alt="">
+            <img class="banner-img" src="https://picsum.photos/1888" alt="">
+        </article>
+        <hr>
+        <!-- our profile -->
+        <section class="oProfile">
+            <!-- header profile -->
+            <header>
+                <h1 id="oProfile" class="titleProfile">Our Profile</h1>
+            </header>
+            <!-- profile container -->
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img-1"></div>
+                    <h2 class="profile-text">Software Engineer</h2>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-img-2"></div>
+                    <h2>Data Analyst</h2>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-img-3"></div>
+                    <h2>QA Engineer</h2>
+                </div>
+            </section>
+        </section>
+        <hr>
+        <!-- message us -->
+        <section class="form-result">
+            <h1 id="messageUs" class="messageUs">Message Us</h1>
+            <table>
+                <tr>
+                    <td>
+                        <!-- form input -->
+                        <form class="form" name="message-form">
+                            <table>
+                                <tr>
+                                    <td><p>Nama </p></td>
+                                    <td><input class="input" type="text" name="name" id="fullname" placeholder="Nama" style="width: 310px;"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Tanggal Lahir </p></td>
+                                    <td><input class="input" type="date" name="tgl_lahir" id="tgl_lahir" style="width: 315px;" placeholder="Tanggal Lahir"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Jenis Kelamin </p></td>
+                                    <td>
+                                        <input class="input" type="radio" name="jk" id="r_laki" value="Laki-laki" >Laki-laki
+                                        <input type="radio" name="jk" id="r_perempuan" value="Perempuan">Perempuan
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p>Pesan </p></td>
+                                    <td><textarea class="input" name="pesan" id="pesan" cols="40" rows="5" placeholder="Isi Pesan"></textarea></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><button id="submit" type="submit" value="submit" onclick="return validateForm()">Submit</button></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                    <!-- form isi data -->
+                    <td class="send-form">
+                        <div class="form">
+                            <table>
+                                <tr>
+                                    <td><p>Nama </p></td>
+                                    <td><p>: <span id="send-username"></span></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Tanggal Lahir </p></td>
+                                    <td><p>: <span id="send-tgl"></span></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Jenis Kelamin </p></td>
+                                    <td><p>: <span id="send-jk"></span></p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Pesan </p></td>
+                                    <td><p>: <span id="send-pesan"></span></p></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <p>Made by Yanwar Adithia</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

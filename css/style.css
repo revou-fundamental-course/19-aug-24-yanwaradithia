@@ -1,0 +1,166 @@
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/100);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu-home{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.menu-profile{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-top: 1px solid;
+}
+
+.menu-achieve{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.menu-message{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.banner-img{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.oProfile{
+    display: flex;
+    flex-direction: column;
+}
+.oProfile .titleProfile{
+    text-align: center;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-item{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-img-1{
+    height: 150px;
+    background-image: url(https://picsum.photos/250);
+    background-size: cover;
+    border-radius: 50%;
+    width: 150px;
+    align-self: center;
+}
+
+.profile-img-2{
+    height: 150px;
+    background-image: url(https://picsum.photos/251);
+    background-size: cover;
+    border-radius: 50%;
+    width: 150px;
+    align-self: center;
+}
+
+.profile-img-3{
+    height: 150px;
+    background-image: url(https://picsum.photos/252);
+    background-size: cover;
+    border-radius: 50%;
+    width: 150px;
+    align-self: center;
+}
+
+.profile-text{
+    text-align: center;
+}
+
+.form-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    border: 1px solid;
+    height: 350px;
+    width: 600px;
+}
+
+.input{
+    margin-left: 100px;
+}
+
+.send-form{
+    padding-left: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-wrapper{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+        display: -webkit-inline-box;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo{
+        margin-bottom: 14px;
+    }
+}
